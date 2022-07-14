@@ -6,12 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Propiedades de CSS</title>
     <style>
-      div {
+      section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .card {
+        width: 200px;
+        height: 300px;
+        background: green;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+      .card img {
+        width: 100%;
+      }
+      .card p {
+        text-align: center;
+      }
+      .card p:nth-child(3) {
         color: red;
       }
     </style>
   </head>
   <body>
-    <div>Css mas usado</div>
+    <section>
+      <div class="card">
+        <img
+          src="https://media-exp2.licdn.com/dms/image/C4E03AQE6oNqHGvuPPw/profile-displayphoto-shrink_800_800/0/1637762633064?e=1663200000&v=beta&t=DdiGgBTqFNwyWbqmFPrinhwv0ZvaWZsr2sfRaczwiYg"
+          alt="Robert"
+        />
+        <p>Raag</p>
+        <p>Linkedin</p>
+      </div>
+    </section>
   </body>
 </html>
